@@ -1,0 +1,18 @@
+/* Acá voy a dejar todos los estilos de Css*/
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-wasap{
+    border: 1px solid black;
+    width: 99%;
+    height: 99vh;
+    margin: 0 auto;
+    display: flex;
+}
+
+.contenido-wasap{
+    border: 1px solid tomato;
+    width: 100%;
+}
