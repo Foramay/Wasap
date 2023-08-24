@@ -1,0 +1,1 @@
+//Acá voy a dejar todas las funcionalidades de JavaScript
