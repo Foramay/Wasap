@@ -1,3 +1,10 @@
-src/app/settings/local.py
-
 *.pyc
+src/app/settings/local.py
+src/media/imagenes_evento
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.bmp
+*.svg
+*.jfif
