@@ -4,15 +4,37 @@
 {% block contenido_wasap %}
     <main class="contenedor-wasap">
         <section class="section-wasap-izquierdo">
-            <h1>Seccion izquierda</h1>
-            <!--Offcanvas de perfil-->
-            <button class="toggle-offcanvas">Abrir Offcanvas de perfil</button>
+            
+            <article class="wasap-header">
+                <div class="contenedor-imagen-perfil-usuario">
+                    <span class="toggle-offcanvas">
+                        <img src="{% static 'img/neymar.jpg' %}" alt="" class="imagen-perfil-usuario">
+                    </span>
+                    
+                </div>
+                <div class="contenedor-iconos">
+                    <span class="toggle-offcanvas-comunidad">
+                        <i class="fa-solid fa-users" title="Comunidades" ></i>
+                    </span>
+                    <i class="fa-solid fa-bullseye" title="Estados"></i>
+                    <span class="toggle-offcanvas-mensajes">
+                        <i class="fa-solid fa-envelope" title="Nuevo Chat"></i>
+                    </span>
+                    <i class="fa-solid fa-ellipsis-vertical" title="Menú"></i>
+                </div>
+                
+            </article>
 
-            <!--Offcanvas de Comunidad-->
-            <button class="toggle-offcanvas-comunidad">Abrir Offcanvas de comunidades</button>
 
-            <!--Offcanvas de Mensajes-->
-            <button class="toggle-offcanvas-mensajes">Abrir Offcanvas Mensajes</button>
+
+
+            <article class="wasap-textarea">
+                <h1>Wasap Textarea</h1>
+            </article>
+            <article class="wasap-chats">
+                <h1>Wasap chats</h1>
+            </article>
+            
             <!--Opciones-->
             
         </section>
