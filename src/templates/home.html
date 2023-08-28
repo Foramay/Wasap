@@ -3,62 +3,30 @@
 
 {% block contenido_wasap %}
     <main class="contenedor-wasap">
-        <section class="contenido-wasap-izquierdo">
-            <!---->
-            <article class="contenedor-header">
-                <div class="contenedor-imagen-perfil">
-                    <img src="{% static 'img/foto_perfil.jfif' %}" alt="" class="usuario-imagen-perfil">
-                </div>
-                <div class="contenedor-iconos">
-                    <i class="fa-solid fa-users" title="Comunidades"></i>
-                    <i class="fa-solid fa-bullseye" title="Estados"></i>
-                    <i class="fa-solid fa-envelope" title="Nuevo Chat"></i>
-                    <i class="fa-solid fa-ellipsis-vertical" title="Menú"></i>
-                </div>
-            </article>
+        <section class="section-wasap-izquierdo">
+            <h1>Seccion izquierda</h1>
+            <!--Offcanvas de perfil-->
+            <button class="toggle-offcanvas">Abrir Offcanvas de perfil</button>
+
+            <!--Offcanvas de Comunidad-->
+            <button class="toggle-offcanvas-comunidad">Abrir Offcanvas de comunidades</button>
+
+            <!--Offcanvas de Mensajes-->
+            <button class="toggle-offcanvas-mensajes">Abrir Offcanvas Mensajes</button>
+            <!--Opciones-->
             
-            <!---->
-            <article class="contenedor-textarea">
-                <div class="container">
-                    <div class="textarea-icono">
-                        <i class="fa-solid fa-magnifying-glass" id="icono"></i>
-                    </div>
-                    <div>
-                        <textarea name="" id="textarea" placeholder="Busca un chat o inicia uno nuevo." class="textarea-wasap"></textarea>
-                    </div>
-                </div>
-                <div class="icono">
-                    <i class="fa-solid fa-bars" title="Filtro de chats no leídos"></i>
-                </div>
-            </article>
-            
-
-            
-
-            <!---->
-            <article class="contenedor-chat">
-                <div class="contenedor-imagen-contacto">
-                    <img src="{% static 'img/foto_perfil.jfif' %}" alt="" class="imagen-contacto">
-                </div>
-                <div class="contenedor-informacion-usuario">
-                    <div class="chat-usuario">
-                        <h1>Nombre del usuario</h1>
-                    </div>
-
-
-                    <div class="icono-opciones">
-                        <i class="fa-solid fa-chevron-down" ></i>
-                    </div>
-                
-                
-                </div>
-            </article>
         </section>
-        <section class="contenido-wasap-derecho">
-            <article>
-                Contenedor de chats
-            </article>
+
+        <section class="section-wasap-derecho">
+            <h1>Seccion derecha</h1>
         </section>
+
+        <!--Agrego este include para mostrar el offcanvas del perfil-->
+        {% include 'includes/include_offcanvas_perfil.html' %}
+        {% include 'includes/include_offcanvas_comunidad.html' %}
+        {% include 'includes/include_offcanvas_mensajes.html' %}
+        
     </main>
-{% endblock contenido_wasap %}
+    {% endblock contenido_wasap %}
+     
     

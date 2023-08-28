@@ -1,0 +1,69 @@
+/* Estilos para el offcanvas de perfil*/
+.offcanvas {
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.offcanvas.active {
+    left: 0;
+}
+
+.close-offcanvas {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+
+
+/* Offcanvas para Comunidad*/
+
+.offcanvas-comunidad{
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.offcanvas-comunidad.active {
+    left: 0;
+}
+
+.close-offcanvas-comunidad{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* Offcanvas para Mensajes*/
+
+.offcanvas-mensajes{
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.offcanvas-mensajes.active {
+    left: 0;
+}
+
+.close-offcanvas-mensajes{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}

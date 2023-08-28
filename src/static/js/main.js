@@ -1,39 +1,44 @@
-//Acá voy a dejar todas las funcionalidades de JavaScript
+//Acá voy a dejar todas las funciones
 
 
-//Esta función la cree para que cuando el usuario haga click en el icono de buscar, se conecte automaticamente con el textarea
-document.getElementById('icono').addEventListener('click', function() {
-    document.getElementById('textarea').focus();
+
+//Esta funcion lo que hace es abrir y cerrar el offcanvas
+document.addEventListener("DOMContentLoaded", function () {
+    const offcanvas = document.querySelector(".offcanvas");
+    const toggleButton = document.querySelector(".toggle-offcanvas");
+    const closeButton = document.querySelector(".close-offcanvas");
+
+    toggleButton.addEventListener("click", function () {
+        offcanvas.classList.add("active");
+    });
+
+    closeButton.addEventListener("click", function () {
+        offcanvas.classList.remove("active");
+    });
+
+    const offcanvas2 = document.querySelector(".offcanvas-comunidad");
+    const toggleButton2 = document.querySelector(".toggle-offcanvas-comunidad");
+    const closeButton2 = document.querySelector(".close-offcanvas-comunidad");
+
+    toggleButton2.addEventListener("click", function () {
+        offcanvas2.classList.add("active");
+    });
+
+    closeButton2.addEventListener("click", function () {
+        offcanvas2.classList.remove("active");
+    });
+
+    const offcanvas3 = document.querySelector(".offcanvas-mensajes");
+    const toggleButton3 = document.querySelector(".toggle-offcanvas-mensajes");
+    const closeButton3 = document.querySelector(".close-offcanvas-mensajes");
+
+    toggleButton3.addEventListener("click", function () {
+        offcanvas3.classList.add("active");
+    });
+
+    closeButton3.addEventListener("click", function () {
+        offcanvas3.classList.remove("active");
+    });
 });
-
-
-//Esta función lo que hace es que cuando el usuario haga click sobre el textarea, desaparezca el placeholder
-document.getElementById('textarea').addEventListener('focus', function() {
-    this.removeAttribute('placeholder');
-});
-
-document.getElementById('textarea').addEventListener('blur', function() {
-    if (!this.value) {
-        this.setAttribute('placeholder', 'Busca un chat o inicia uno nuevo.');
-    }
-});
-
-
-//Esta función lo que hace es solamente cambiar de un icono a otro al hacer click en el textarea
-document.getElementById('textarea').addEventListener('focus', function() {
-    this.removeAttribute('placeholder');
-    document.getElementById('icono').classList.replace('fa-magnifying-glass', 'fa-arrow-left');
-});
-
-document.getElementById('textarea').addEventListener('blur', function() {
-    if (!this.value) {
-        this.setAttribute('placeholder', 'Busca un chat o inicia uno nuevo.');
-        document.getElementById('icono').classList.replace('fa-arrow-left', 'fa-magnifying-glass');
-    }
-});
-
-
-
-
 
 

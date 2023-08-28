@@ -1,180 +1,24 @@
-/* Acá voy a dejar todos los estilos de Css*/
 body{
-    margin: 0;
     padding: 0;
+    margin: 0;
+    height: 0;
 }
 
-.contenedor-header{
-    display: flex;
-    width: 100%;
-    background-color: rgb(238, 235, 235);
-    align-items: center;
-}
+
 .contenedor-wasap{
-    width: 99%;
-    height: 99vh;
+    border: 1px solid tomato;
+    width: 100%;
     margin: 0 auto;
     display: flex;
-    height: auto;
+    height: 100vh;
 }
 
-.contenido-wasap-izquierdo{
-    width: 60%;
+.section-wasap-izquierdo{
+    border: 1px solid black;
+    width: 30%;
 }
 
-.contenido-wasap-derecho{
-    width: 100%;
-}
-
-
-.contenedor-imagen-perfil{
-    display: flex;
-    align-items: center;
-    width: 50%;
-}
-
-.usuario-imagen-perfil{
-    margin: 20px 30px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 20px;
-    
-}
-
-.usuario-imagen-perfil:hover{
-    cursor: pointer;
-}
-
-
-
-.contenedor-iconos{
-    width: 50%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-grow: 1;
-}
-
-.contenedor-iconos i{
-    width: 30px;
-    height: 30px;
-    margin-left: 15px;
-    color: rgb(83, 83, 83);
-    font-size: 25px;
-    transition: color .3s;
-}
-
-.contenedor-iconos i:hover{
-    cursor: pointer;
-    color: rgb(63, 62, 62);
-}
-
-
-/* Contenedor de textarea */
-
-.contenedor-textarea{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 40px;
-    width: 100%;
-    margin-top: 10px;
-    padding: 5px;
-    position: relative;
-}
-
-.container{
-    display: flex;
-    align-items: center;
-    background-color: rgb(238, 235, 235);
-    width: 85%;
-    border-radius: 20px 0 0 20px; 
-}
-
-.textarea-wasap{
-    height: 40px;
-    width: 350px;
-    resize: none;
-    border: none;
-    background-color: rgb(238, 235, 235);
-    outline: none;
-    font-size: 16px;/* Centrar horizontalmente */
-    padding-top: 20px;
-}
-
-
-
-.textarea-icono{
-    margin-right: 10px;
-    padding-left: 10px;
-    cursor: pointer;
-    color: rgb(83, 83, 83);
-    font-size: 20px;
-
-}
-
-
-.icono{
-    margin-right: 10px;
-    padding-left: 10px;
-    cursor: pointer;
-    color: rgb(83, 83, 83);
-    font-size: 25px;
-    height: 25px;
-}
-
-
-/* Seccion de chats*/
-
-.contenedor-chat{
-    display: flex;
-    margin-top: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-.contenedor-chat:hover{
-    background-color: rgb(238, 235, 235);
-}
-
-.contenedor-imagen-contacto{
-}
-
-.imagen-contacto {
-    margin: 20px 30px;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-right: 20px;
-}
-
-
-.contenedor-informacion-usuario{
-    display: flex;
-    width: 100%;
-    position: relative;
-}
-
-.chat-usuario{
-    width: 80%;
-}
-.chat-usuario h1{
-    color: rgba(0, 0, 0, 0.911);
-    font-size: 15px; 
-    letter-spacing: 2px;
-    font-weight: 900;
-}
-.icono-opciones{
-    width: 30px;
-    height: auto;
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-top: 10px;
-
-}
-
-.icono-opciones i{
-    color: rgb(83, 83, 83);
-    cursor: pointer;
+.section-wasap-derecho{
+    border: 1px solid greenyellow;
+    width: 70%;
 }
