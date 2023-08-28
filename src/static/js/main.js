@@ -42,3 +42,18 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//Estilos para el dropdown
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector(".dropdown-toggle");
+    const dropdown = document.querySelector(".dropdown");
+
+    toggleButton.addEventListener("click", function () {
+        dropdown.classList.toggle("open");
+    });
+
+    document.addEventListener("click", function (event) {
+        if (!dropdown.contains(event.target) && !toggleButton.contains(event.target)) {
+            dropdown.classList.remove("open");
+        }
+    });
+});
