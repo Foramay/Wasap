@@ -65,10 +65,24 @@
 
 
             <article class="wasap-chats">
-                <h1>Wasap chats</h1>
+                <div class="contenedor-chat">
+                    <div class="contenedor-imagen-contacto">
+                        <img src="{% static 'img/neymar.jpg' %}" alt="" class="imagen-contacto">
+                    </div>
+                    <div class="contenedor-informacion-contacto">
+                        <h1 class="nombre-contacto">Nombre de contacto</h1>
+                        <div class="ultimo-mensaje-visto">
+                            <i class="fa-solid fa-check"></i>
+                            <p>Ultimo mensaje</p>
+                        </div>
+                    </div>
+                    <div class="opciones-contacto">
+                        <p>10:00</p>
+                        <i class="fa-solid fa-chevron-down" ></i>
+                    </div>
+                </div>
             </article>
             
-            <!--Opciones-->
             
         </section>
 
@@ -78,7 +92,9 @@
 
         <!--Agrego este include para mostrar el offcanvas del perfil-->
         {% include 'includes/include_offcanvas_perfil.html' %}
+    <!--Agrego este include para mostrar el offcanvas de Comunidades-->
         {% include 'includes/include_offcanvas_comunidad.html' %}
+        <!--Agrego este include para mostrar el offcanvas de Mensajes-->
         {% include 'includes/include_offcanvas_mensajes.html' %}
         
     </main>

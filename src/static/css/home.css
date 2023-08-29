@@ -193,3 +193,103 @@ body{
     cursor: pointer;
     font-size: 25px;
 }
+
+
+/* Estilos para los chats */
+
+.contenedor-chat{
+    display: flex;
+    transition: background-color 0.3s ease-in-out;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.contenedor-chat:hover{
+    background-color: rgba(175, 248, 224, 0.219);
+    cursor: pointer;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.219);
+}
+
+.contenedor-imagen-contacto{
+    width: 20%;
+    overflow: hidden;
+}
+
+.imagen-contacto{
+    margin: 5px;
+    padding-left: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    max-width: 100%;
+}
+.imagen-contacto:hover{
+    cursor: pointer;
+    box-shadow: 5px 0 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+.contenedor-informacion-contacto{
+    width: 70%;
+    
+}
+
+.contenedor-informacion-contacto h1{
+    top: 0; 
+    padding: 10px;
+    margin: 0;
+    font-family: Helvetica;
+}
+
+.ultimo-mensaje-visto{
+    display: flex;
+}
+
+.ultimo-mensaje-visto i{
+    top: 0; 
+    padding: 10px;
+    margin: 0;
+}
+.ultimo-mensaje-visto p{
+    top: 0; 
+    padding: 10px;
+    margin: 0;
+    
+}
+
+.opciones-contacto{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.opciones-contacto p{
+    color: rgb(83, 83, 83);
+    font-weight: lighter;
+    
+}
+
+.contenedor-chat .fa-chevron-down {
+    transform: translateX(100%); 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+  }
+
+.contenedor-chat:hover .fa-chevron-down {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  .contenedor-chat .fa-chevron-down {
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Transiciones suaves */
+  }
+  
+  .contenedor-chat:not(:hover) .fa-chevron-down {
+    transform: translateX(100%); /* Desaparece hacia la derecha */
+    opacity: 0; /* Desaparece gradualmente */
+  }
