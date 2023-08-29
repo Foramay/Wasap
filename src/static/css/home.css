@@ -119,3 +119,77 @@ body{
 .dropdown-menu li:hover {
     background-color: #e0dfdf;
 }
+
+
+/* Contenedor textarea */
+
+.wasap-textarea{
+    width: 95%;
+    height: 10%;
+    margin: 10px auto;
+}
+
+.contenedor-header{
+    height: 100%;
+    display: flex;
+}
+
+.contenedor-icono-1{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(175, 248, 224, 0.219);
+}
+
+.contenedor-icono-1 i{
+    font-size: 20px; 
+    transition: font-size 0.3s ease-in-out;
+}
+
+.contenedor-icono-1 i:hover{
+    cursor: pointer;
+    font-size: 25px; 
+}
+
+.contenedor-textarea{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    background-color: rgba(175, 248, 224, 0.219);
+}
+
+.contenedor-textarea textarea{
+    resize: none;
+    border: none;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(175, 248, 224, 0.219);
+    outline: none;
+}
+.custom-textarea::placeholder{
+    color: rgb(90, 90, 90);
+    font-size: 15px;
+}
+
+.custom-textarea:focus{
+    border: none;
+}
+.contenedor-icono-2{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-icono-2 i{
+    font-size: 20px; 
+    transition: font-size 0.3s ease-in-out;
+}
+
+.contenedor-icono-2 i:hover{
+    cursor: pointer;
+    font-size: 25px;
+}
