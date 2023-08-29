@@ -60,3 +60,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+//Dropdown de chats
+const chevronIcon = document.querySelector('.fas.fa-chevron-down');
+const dropdownContainer = document.querySelector('.opciones-contacto');
+const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+chevronIcon.addEventListener('click', (event) => {
+    event.stopPropagation();
+    dropdownContainer.classList.toggle('open');
+});
+
+// Evento de clic en el documento para cerrar el dropdown al hacer clic fuera de él
+document.addEventListener('click', (event) => {
+    if (!dropdownContainer.contains(event.target) && dropdownContainer.classList.contains('open')) {
+        dropdownContainer.classList.remove('open');
+    }
+});
+
+// Animación de aparición suave para cada elemento del dropdown
+dropdownItems.forEach((item, index) => {
+    item.style.transitionDelay = (index * 0.1) + 's'; // Ajusta el retraso para cada elemento
+});
+
+
+
