@@ -84,3 +84,41 @@ dropdownItems.forEach((item, index) => {
 
 
 
+//Textarea de offcanvas de mensajes
+// Obtener el elemento del textarea
+var textarea = document.getElementById('contacto');
+
+// Agregar un evento de enfoque (focus) al textarea
+textarea.addEventListener('focus', function() {
+    // Eliminar el atributo placeholder
+    this.removeAttribute('placeholder');
+});
+
+
+//
+// Obtener el elemento del textarea y el botón de limpiar
+var textarea = document.getElementById('contacto');
+var clearButton = document.getElementById('clearButton');
+
+// Guardar el valor original del placeholder
+var placeholder = textarea.placeholder;
+
+// Agregar un evento de clic al botón de limpiar
+clearButton.addEventListener('click', function() {
+    // Restaurar el valor del placeholder al textarea
+    textarea.value = '';
+    textarea.placeholder = placeholder;
+    // Ocultar el botón de limpiar
+    clearButton.style.display = 'none';
+});
+
+// Agregar un evento de entrada (input) al textarea
+textarea.addEventListener('input', function() {
+    // Mostrar el botón de limpiar si el textarea tiene contenido
+    if (textarea.value.length > 0) {
+        clearButton.style.display = 'block';
+    } else {
+        clearButton.style.display = 'none';
+    }
+});
+

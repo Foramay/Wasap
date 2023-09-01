@@ -190,8 +190,79 @@
     left: 0;
 }
 
-.close-offcanvas-mensajes{
-    
+/* Seccion del textarea del offcanvas de mensajes */
+.seccion-textarea{
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.contenedor-icono-offcanvas-mensajes{
+    flex: 0 0 auto;
+    width: 10%;
+}
+.contenedor-icono-offcanvas-mensajes i {
+    font-size: 24px; 
+    color: gray;
+    transition: font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.contenedor-icono-offcanvas-mensajes i:hover {
+    font-size: 27px; 
+    color: rgb(70, 70, 70);
+    cursor: pointer;
+}
+.contenedor-textarea-offcanvas-mensajes{
+    margin-left: 5px;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
+    position: relative; 
+}
+
+.contenedor-textarea-offcanvas-mensajes textarea{
+    background-color: #d1d7db;
+    resize: none;
+    width: 100%;
+    border-radius: 2rem;
+
+    padding-right: 30px;
+    font-size: 20px;
+}
+
+/**/
+.contenedor-textarea-offcanvas-mensajes button.clear-button {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: none;
+    color: black;
+    font-weight: bold;
+
+    transition:  border-radius 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.contenedor-textarea-offcanvas-mensajes button.clear-button:hover{
+    border-radius: 50%;
+    background-color: #b0b2b3;
+}
+
+.contenedor-textarea-offcanvas-mensajes textarea::placeholder {
+    color: gray;
+    padding-top: 5px;
+    font-weight: bold;
+    padding-left: 5px;
+}
+
+.contenedor-textarea-offcanvas-mensajes textarea:focus + button.clear-button {
+    outline: none; /* Eliminar el borde de enfoque */
+}
