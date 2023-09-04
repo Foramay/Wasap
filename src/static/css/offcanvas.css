@@ -320,3 +320,13 @@
     font-family: 'Roboto Mono', monospace;
     letter-spacing: 2px;
 }
+
+
+/* Esta seccion es la parte de los contactos del usuario */
+
+
+.seccion-contactos{
+    border: 1px solid black;
+    margin: 5px auto;
+    height: auto;
+}

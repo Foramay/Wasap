@@ -1,3 +1,4 @@
+{% load static %}
 <!--Contenido del Offcanvas de Mensajes-->
 <div class="offcanvas-mensajes">
     <section class="section-header">
@@ -37,7 +38,17 @@
 
     <h1 class="titulo-wasap">Contactos en Wasap</h1>
 
-    <section>
-
+    <section class="wasap-chats">
+        <article class="contenedor-chat">
+            <div class="contenedor-imagen-contacto">
+                <img src="{% static 'img/messi.jpg' %}" alt="" class="imagen-contacto">
+            </div>
+            <div class="contenedor-informacion-contacto">
+                <h1 class="nombre-contacto">Contacto 1</h1>
+            </div>
+        </article>
     </section>
+
+
+    
 </div>
