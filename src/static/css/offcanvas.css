@@ -266,3 +266,57 @@
 .contenedor-textarea-offcanvas-mensajes textarea:focus + button.clear-button {
     outline: none; /* Eliminar el borde de enfoque */
 }
+
+
+/* Seccion de los botones */
+
+.seccion-botones{
+    width: 100%;
+    height: 20%;
+    margin-top: 5px;
+}
+
+.contenedor-botones{
+
+}
+
+
+.btn-grupo{
+    display: flex;
+    height: 60px;
+    display: flex;
+    transition: background-color 0.2s ease-in-out;
+    margin-top: 10px;
+}
+.btn-grupo:hover{
+    background-color: #e3e3e4be;
+    cursor: pointer;
+}
+.btn-grupo i{
+    border-radius: 50%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    color: white;
+    background-color: #008069;
+    font-size: 24px;
+}
+
+
+.btn-grupo h1{
+    margin-left: 10px; /* Espacio a la izquierda del <h1> */
+    font-family: inherit;
+    color: rgb(65, 65, 65);
+    font-size: 20px;
+}
+
+
+.titulo-wasap{
+    color: #008069;
+    font-size: 18px;
+    margin-top: 15px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+}
