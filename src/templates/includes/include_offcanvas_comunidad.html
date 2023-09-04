@@ -1,5 +1,32 @@
+{% load static %}
 <!--Contenido del Offcanvas de Comunidad-->
 <div class="offcanvas-comunidad">
-    <h1>hola, este es el offcanvas de comunidad</h1>
-    <button class="close-offcanvas-comunidad">Cerrar</button>
+    <section class="section-header">
+        <article class="close-offcanvas">
+            <i class="fa-solid fa-arrow-left close-offcanvas-comunidad"></i>
+        </article>
+        <article class="titulo">
+            <h1>Comunidades</h1>
+        </article>
+    </section>
+
+
+    <section class="seccion-comunidad">
+        <article class="contenedor-imagen-comunidad">
+            <img src="{% static 'img/comunidad.webp' %}" alt="" class="imagen-comunidad">
+        </article>
+
+        <article class="contenedor-informacion-comunidad">
+            <h1>
+                Crea una comunidad para mantenerte en contacto
+            </h1>
+            <p>
+                Las comunidades reúnen a los miembros en grupos por temas y facilitan la recepción de avisos de los administradores. Cualquier comunidad a la que te añadan aparecerá aquí. <a href="">Más información.</a>
+            </p>
+        </article>
+
+        <article class="contenedor-boton">
+            <button class="btn-comunidad">Iniciar tu comunidad</button>
+        </article>
+    </section>
 </div>

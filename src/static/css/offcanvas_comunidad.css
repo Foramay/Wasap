@@ -1,0 +1,103 @@
+/* Offcanvas para Comunidad*/
+
+.offcanvas-comunidad{
+    position: fixed;
+    top: 0;
+    left: -30%;
+    width: 30%;
+    height: 100%;
+    background-color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 9999;
+
+    overflow-y: auto;
+}
+
+/**/
+.offcanvas-comunidad::-webkit-scrollbar {
+    width: 10px; /* Ancho del scrollbar */
+}
+
+.offcanvas-comunidad::-webkit-scrollbar-thumb {
+    background-color: #666; /* Color del thumb */
+    border-radius: 5px; /* Redondea las esquinas del thumb */
+}
+
+.offcanvas-comunidad::-webkit-scrollbar-thumb:hover {
+    background-color: #333;
+}
+
+
+
+
+
+
+
+/**/
+.offcanvas-comunidad.active {
+    left: 0;
+}
+
+.seccion-comunidad{
+    margin: 5px auto;
+    width: 100%;
+    overflow-y: auto;
+}
+
+.contenedor-imagen-comunidad{
+    width: 100%;
+}
+
+.imagen-comunidad{
+    width: 100%;
+    height: 250px;
+}
+
+.contenedor-informacion-comunidad{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.contenedor-informacion-comunidad h1{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 20px;
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+}
+
+.contenedor-informacion-comunidad p{
+    color: rgb(65, 65, 65);
+    margin-top: 0;
+    font-size: 15px;
+}
+
+.contenedor-informacion-comunidad a{
+    text-decoration: none;
+    color: darkblue;
+    font-size: 17px;
+}
+
+
+.contenedor-boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-comunidad{
+    background-color: #008069;
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 3rem;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-comunidad:hover{
+    cursor: pointer;
+    background-color: #005041;
+}
