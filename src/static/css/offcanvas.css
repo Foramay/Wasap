@@ -148,8 +148,6 @@
 }
 
 
-
-
 /* Offcanvas para Comunidad*/
 
 .offcanvas-comunidad{
@@ -184,7 +182,23 @@
     background-color: white;
     transition: left 0.3s ease-in-out;
     z-index: 9999;
+    overflow-y: auto;
 }
+.offcanvas-mensajes::-webkit-scrollbar-thumb {
+    background-color: #848686;
+    border-radius: 5px; 
+}
+.offcanvas-mensajes::-webkit-scrollbar-thumb:hover {
+    background-color: #6c6d6d;
+    cursor: pointer;
+}
+
+
+.offcanvas-mensajes::-webkit-scrollbar{
+    width: 10px;
+}
+
+
 
 .offcanvas-mensajes.active {
     left: 0;
