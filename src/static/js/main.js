@@ -125,3 +125,30 @@ textarea.addEventListener('input', function() {
 
 //
 
+const toggleButton = document.querySelector('.informacion-del-usuario-toggle-button');
+const offcanvasPanel = document.querySelector('.informacion-del-usuario-panel');
+const closeButton = document.querySelector('.close-button');
+const content = document.querySelector('.content');
+
+toggleButton.addEventListener('click', () => {
+    if (offcanvasPanel.style.right === '0px') {
+        closeOffcanvas();
+    } else {
+        openOffcanvas();
+    }
+});
+
+closeButton.addEventListener('click', () => {
+    closeOffcanvas();
+});
+
+function openOffcanvas() {
+    offcanvasPanel.style.right = '0px';
+    content.style.marginLeft = '250px';
+}
+
+function closeOffcanvas() {
+    offcanvasPanel.style.right = '-250px';
+    content.style.marginLeft = '0';
+}
+

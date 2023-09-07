@@ -98,7 +98,8 @@
         <section class="section-wasap-derecho">
             <article class="contenedor-chat-contacto">
                 <div class="contenedor-imagen-contacto-chat">
-                    <img src="{% static 'img/messi.jpg' %}" alt="" class="imagen-contacto-chat">
+                    <img src="{% static 'img/messi.jpg' %}" alt="" class="imagen-contacto-chat informacion-del-usuario-toggle-button">
+                    
                 </div>
                 <div class="contenedor-nombre-contacto">
                     <h1>Nombre del contacto</h1>
@@ -114,11 +115,12 @@
 
         <!--Agrego este include para mostrar el offcanvas del perfil-->
         {% include 'includes/include_offcanvas_perfil.html' %}
-    <!--Agrego este include para mostrar el offcanvas de Comunidades-->
+        <!--Agrego este include para mostrar el offcanvas de Comunidades-->
         {% include 'includes/include_offcanvas_comunidad.html' %}
         <!--Agrego este include para mostrar el offcanvas de Mensajes-->
         {% include 'includes/include_offcanvas_mensajes.html' %}
-        
+        <!--Agrego este include para mostrar el offcanvas de informacion de contacto -->
+        {% include 'includes/include_offcanvas_info_contacto.html' %}
     </main>
     {% endblock contenido_wasap %}
      
