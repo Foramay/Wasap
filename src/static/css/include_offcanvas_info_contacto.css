@@ -70,3 +70,52 @@
 .close-button:hover{
     font-size: 30px;
 }
+
+/**/
+
+.contenedor-info-contacto{
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-info-imagen-contacto{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.info-imagen-perfil-contacto{
+    width: 200px;
+    height: 200px;
+    vertical-align: middle;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.info-imagen-perfil-contacto:hover{
+    width: 205px;
+    height: 205px;
+    cursor: pointer;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.603);
+}
+
+
+/*contenedor del nombre de usuario*/
+.contenedor-nombre-usuario{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nombre-usuario{
+    color: rgba(0, 0, 0, 0.74);
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}

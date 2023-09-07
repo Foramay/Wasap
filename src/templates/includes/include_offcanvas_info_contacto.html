@@ -1,3 +1,4 @@
+{% load static %}
 <div class="informacion-del-usuario-container">
     <div class="informacion-del-usuario-panel">
 
@@ -17,9 +18,17 @@
         
         
         <!---->
-        <article>
-
+        <article class="contenedor-info-contacto">
+            <div class="contenedor-info-imagen-contacto"> 
+                <img src="{% static 'img/messi.jpg' %}" alt="" class="info-imagen-perfil-contacto">
+            </div>
+            <div class="contenedor-nombre-usuario">
+                <h1 class="nombre-usuario">Nombre usuario</h1>
+            </div>
         </article>
+
+
+
         <!---->
         <article>
 
